@@ -6,7 +6,7 @@ export default function App() {
     <div className="App">
       <div className="container">
         <Dictionary />
-        <footer className="mt-5">
+        <footer>
           <a
             href="https://github.com/nadegerodier/dictionary-app"
             target="_blank"
