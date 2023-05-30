@@ -10,6 +10,7 @@ export default function App() {
           <a
             href="https://github.com/nadegerodier/dictionary-app"
             target="_blank"
+            rel="noreferrer"
           >
             Open-source code
           </a>{" "}
@@ -17,6 +18,7 @@ export default function App() {
           <a
             href="https://incomparable-starburst-3e5eae.netlify.app"
             target="_blank"
+            rel="noreferrer"
           >
             Nadege Rodier
           </a>
