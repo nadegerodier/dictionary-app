@@ -1,3 +1,11 @@
-.container {
+.App .container {
   margin: 60px auto;
+}
+
+.App footer {
+  text-align: center;
+}
+
+.App footer a {
+  text-decoration: none;
 }
