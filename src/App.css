@@ -1,12 +1,23 @@
+.App {
+  color: var(--text-color);
+}
+
 .App .container {
-  margin: 60px auto;
+  margin: 0 auto;
+  padding: 60px 0;
 }
 
 .App footer {
+  color: var(--off-white);
   margin-top: 50px;
   text-align: center;
 }
 
 .App footer a {
+  color: var(--off-white);
   text-decoration: none;
+}
+
+.App footer a:hover {
+  color: #587758;
 }
