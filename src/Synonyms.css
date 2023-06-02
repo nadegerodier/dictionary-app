@@ -1,6 +1,6 @@
-.Synonyms a {
+.Synonyms span {
   color: var(--text-color);
-  display: inline-block;
   font-size: 13px;
-  padding-right: 20px;
+  margin-top: 5px;
+  padding-right: 15px;
 }

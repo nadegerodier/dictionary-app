@@ -6,11 +6,7 @@ export default function Synonyms(props) {
     return (
       <div className="Synonyms d-flex">
         {props.synonyms.map(function (synonym, index) {
-          return (
-            <a href="#" key={index}>
-              {synonym}
-            </a>
-          );
+          return <span key={index}>{synonym}</span>;
         })}
       </div>
     );
