@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import axios from "axios";
 import Results from "./Results";
 import Photos from "./Photos";
@@ -8,6 +8,7 @@ export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
   let [results, setResults] = useState(null);
   let [photos, setPhotos] = useState(null);
+  const ref = useRef(null);
 
   function handleDictionaryResponse(response) {
     setResults(response.data[0]);
@@ -17,8 +18,7 @@ export default function Dictionary() {
     setPhotos(response.data.photos);
   }
 
-  function search(event) {
-    event.preventDefault();
+  function search() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(handleDictionaryResponse);
 
@@ -27,6 +27,12 @@ export default function Dictionary() {
     let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
     const headers = { Authorization: pexelsApiKey };
     axios.get(pexelsApiUrl, { headers }).then(handlePexelsImages);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    ref.current.value = "";
+    search();
   }
 
   function handleKeywordChange(event) {
@@ -43,7 +49,7 @@ export default function Dictionary() {
           </div>
           <div className="col-3"></div>
         </div>
-        <form onSubmit={search}>
+        <form onSubmit={handleSubmit}>
           <div className="row justify-content-end mt-2">
             <div className="col-6">
               <div className="form-group">
@@ -53,6 +59,7 @@ export default function Dictionary() {
                   autoFocus={true}
                   placeholder="Search for a word"
                   className="form-control"
+                  ref={ref}
                 />
               </div>
             </div>
