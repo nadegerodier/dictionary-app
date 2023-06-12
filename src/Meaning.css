@@ -1,5 +1,7 @@
 .Meaning h3 {
+  font-family: "Poppins", sans-serif;
   font-size: 26px;
+  font-weight: bold;
   line-height: 1.5;
 }
 
@@ -14,4 +16,10 @@
 
 .Meaning .example::first-letter {
   text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .Meaning h3 {
+    font-size: 22px;
+  }
 }

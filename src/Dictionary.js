@@ -43,15 +43,15 @@ export default function Dictionary() {
     <div className="Dictionary">
       <h1 className="mb-5">Dictionary</h1>
       <section>
-        <div className="row justify-content-end">
-          <div className="col-6">
-            <h3>What word do you want to look up?</h3>
+        <div className="row justify-content-center justify-content-md-end">
+          <div className="col-10 col-lg-6">
+            <h4>What word do you want to look up?</h4>
           </div>
-          <div className="col-3"></div>
+          <div className="col-lg-3"></div>
         </div>
         <form onSubmit={handleSubmit}>
-          <div className="row justify-content-end mt-2">
-            <div className="col-6">
+          <div className="row justify-content-center justify-content-md-end mt-2">
+            <div className="col-7 col-lg-6">
               <div className="form-group">
                 <input
                   type="search"
@@ -63,7 +63,7 @@ export default function Dictionary() {
                 />
               </div>
             </div>
-            <div className="col-3">
+            <div className="col-3 col-lg-3">
               <div className="form-group">
                 <input
                   type="submit"

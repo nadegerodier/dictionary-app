@@ -25,6 +25,7 @@
   background-color: var(--primary-color);
   color: var(--off-white);
   font-size: 18px;
+  height: 40px;
   padding: 5px 10px;
   transition: all 150ms ease-in-out;
   width: 120px;
@@ -35,8 +36,39 @@
   color: var(--primary-color);
 }
 
-.Dictionary h3 {
+.Dictionary h4 {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: bold;
+}
+
+@media (max-width: 992px) {
+  .Dictionary h4 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Dictionary h1 {
+    font-size: 60px;
+  }
+
+  .Dictionary h2 {
+    font-size: 30px;
+  }
+
+  .Dictionary h4 {
+    font-size: 16px;
+  }
+
+  .Dictionary section {
+    margin: 10px 10px 0;
+    padding: 30px;
+  }
+
+  .Dictionary .search-button {
+    font-size: 16px;
+    height: 40px;
+    width: 100px;
+  }
 }
