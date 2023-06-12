@@ -19,6 +19,7 @@ export default function App() {
             href="https://incomparable-starburst-3e5eae.netlify.app"
             target="_blank"
             rel="noreferrer"
+            title="Check out my portfolio!"
           >
             Nadege Rodier
           </a>
