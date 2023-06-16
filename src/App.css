@@ -4,12 +4,12 @@
 
 .App .container {
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 60px 0 40px;
 }
 
 .App footer {
   color: var(--off-white);
-  margin-top: 50px;
+  margin-top: 30px;
   text-align: center;
 }
 
