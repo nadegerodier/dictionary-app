@@ -68,7 +68,7 @@ export default function Dictionary() {
                 <input
                   type="submit"
                   value="Search"
-                  className="btn btn-light shadow-sm search-button"
+                  className="form-control search-button"
                 />
               </div>
             </div>
