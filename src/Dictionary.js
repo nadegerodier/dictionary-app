@@ -50,7 +50,7 @@ export default function Dictionary() {
           <div className="col-lg-3"></div>
         </div>
         <form onSubmit={handleSubmit}>
-          <div className="row justify-content-center justify-content-md-end mt-2">
+          <div className="row justify-content-center justify-content-md-end">
             <div className="col-7 col-lg-6">
               <div className="form-group">
                 <input
