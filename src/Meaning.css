@@ -10,7 +10,9 @@
 }
 
 .Meaning .example {
+  font-size: 14px;
   font-style: italic;
+  margin-top: 5px;
   opacity: 0.6;
 }
 
