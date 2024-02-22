@@ -63,7 +63,7 @@ export default function Dictionary() {
                 />
               </div>
             </div>
-            <div className="col-3 col-lg-3">
+            <div className="col-3">
               <div className="form-group">
                 <input
                   type="submit"
