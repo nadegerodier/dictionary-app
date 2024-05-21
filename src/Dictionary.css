@@ -24,7 +24,8 @@
 }
 
 .Dictionary .search-button {
-  background-color: var(--primary-color);
+  background: var(--primary-color);
+  border-color: var(--primary-color);
   color: var(--off-white);
   font-size: 18px;
   height: 38px;
@@ -34,7 +35,7 @@
 }
 
 .Dictionary .search-button:hover {
-  background-color: var(--secondary-color);
+  background: var(--secondary-color);
   color: var(--primary-color);
 }
 
